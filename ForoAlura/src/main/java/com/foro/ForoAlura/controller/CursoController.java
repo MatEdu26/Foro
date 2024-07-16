@@ -4,6 +4,7 @@ import com.foro.ForoAlura.domain.curso.CursoService;
 import com.foro.ForoAlura.domain.curso.DatosActualizarCurso;
 import com.foro.ForoAlura.domain.curso.DatosCrearCurso;
 import com.foro.ForoAlura.domain.curso.DatosCurso;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

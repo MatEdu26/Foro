@@ -5,6 +5,7 @@ import com.foro.ForoAlura.domain.topico.EstadoTopicoRespuesta;
 import com.foro.ForoAlura.domain.topico.TopicoRepository;
 import com.foro.ForoAlura.domain.topico.respuesta.validaciones.ValidadorRespuesta;
 import com.foro.ForoAlura.domain.usuario.UsuarioRepository;
+import com.foro.ForoAlura.infra.errores.ValidacionDeIntegridad;
 import jakarta.validation.ValidationException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

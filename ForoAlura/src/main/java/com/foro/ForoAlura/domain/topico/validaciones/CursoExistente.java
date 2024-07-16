@@ -2,6 +2,7 @@ package com.foro.ForoAlura.domain.topico.validaciones;
 
 import com.foro.ForoAlura.domain.curso.CursoRepository;
 import com.foro.ForoAlura.domain.topico.DatosCrearTopico;
+import com.foro.ForoAlura.infra.errores.ValidacionDeIntegridad;
 import jakarta.validation.ValidationException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

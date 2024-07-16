@@ -4,6 +4,7 @@ import com.foro.ForoAlura.domain.topico.DatosActualizarTopico;
 import com.foro.ForoAlura.domain.topico.DatosCrearTopico;
 import com.foro.ForoAlura.domain.topico.DatosTopico;
 import com.foro.ForoAlura.domain.topico.TopicoService;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

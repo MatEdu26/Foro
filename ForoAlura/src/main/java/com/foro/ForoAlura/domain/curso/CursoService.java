@@ -2,6 +2,7 @@ package com.foro.ForoAlura.domain.curso;
 
 import com.foro.ForoAlura.domain.curso.validaciones.ValidadorCurso;
 import com.foro.ForoAlura.domain.topico.TopicoRepository;
+import com.foro.ForoAlura.infra.errores.ValidacionDeIntegridad;
 import jakarta.validation.ValidationException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
