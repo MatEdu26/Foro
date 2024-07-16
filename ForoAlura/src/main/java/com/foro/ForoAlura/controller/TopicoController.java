@@ -1,7 +1,14 @@
 package com.foro.ForoAlura.controller;
 
+import com.foro.ForoAlura.domain.topico.DatosActualizarTopico;
+import com.foro.ForoAlura.domain.topico.DatosCrearTopico;
+import com.foro.ForoAlura.domain.topico.DatosTopico;
+import com.foro.ForoAlura.domain.topico.TopicoService;
 import jakarta.transaction.Transactional;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -38,9 +45,8 @@ public class TopicoController {
     }
 
 
-    //TODO: implementar PadeModel
     @GetMapping
-    public ResponseEntity<Page<DatosTopico>> listarTopicos(@PageableDefault(size = 10)Pageable paginacion) {
+    public ResponseEntity<Page<DatosTopico>> listarTopicos(@PageableDefault(size = 10) Pageable paginacion) {
         var response = service.listarTopicos(paginacion);
         return ResponseEntity.ok(response);
     }

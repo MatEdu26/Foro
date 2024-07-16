@@ -1,8 +1,14 @@
 package com.foro.ForoAlura.domain.curso;
 
+import com.foro.ForoAlura.domain.curso.validaciones.ValidadorCurso;
+import com.foro.ForoAlura.domain.topico.TopicoRepository;
+import jakarta.validation.ValidationException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class CursoService {

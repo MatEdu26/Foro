@@ -1,5 +1,9 @@
 package com.foro.ForoAlura.controller;
 
+import com.foro.ForoAlura.domain.topico.EstadoTopicoRespuesta;
+import com.foro.ForoAlura.domain.topico.respuesta.DatosCrearRespuesta;
+import com.foro.ForoAlura.domain.topico.respuesta.DatosEditarRespuesta;
+import com.foro.ForoAlura.domain.topico.respuesta.RespuestaService;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
